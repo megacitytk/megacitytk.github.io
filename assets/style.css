@@ -1,0 +1,244 @@
+/***************
+タグに定義
+***************/
+
+body{
+  color:#222;
+  font-size:1rem;
+  line-height:2;
+}
+h1{
+  font-size:1.5rem;
+}
+h2{
+  font-size:1.3rem;
+}
+h3{
+  font-size:1.1rem;
+}
+a{
+  text-underline-offset:.3ex;
+}
+a:link,a:visited{
+  color:#22f;
+}
+a:hover,
+summary:hover{
+  color:#f22;
+  cursor:pointer;
+}
+ul,
+ol{
+  padding-left:20px;
+}
+li{
+  margin-bottom:.5rem;
+}
+img{
+  border:solid 1px #ccc;
+  max-width:100%;
+  height:auto;
+}
+span[itemtype="http://schema.org/Photograph"] {
+  display: block;
+  text-align: center;
+}
+span[itemtype="http://schema.org/Photograph"] img{
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+q{
+  background:#eee;
+}
+q::before,
+q::after{
+  content:'';
+}
+blockquote{
+  margin:1rem 0;
+  padding:.5rem 1rem .5rem 2rem;
+  background:#eee;
+  border-radius:5px;
+  position:relative;
+}
+blockquote::before{
+  display:inline-block;
+  position:absolute;
+  top:.5rem;
+  left:.5rem;
+  vertical-align:middle;
+  content:"“";
+  font-size:3rem;
+  font-family:Times New Roman,游明朝体,YuMincho,游明朝,Yu Mincho,serif;
+  color:#6f8383;
+  line-height:1;
+}
+pre{
+  white-space:pre-wrap;
+}
+noscript{
+  color:red;
+  font-weight:bold;
+}
+
+/***************
+table
+***************/
+
+table {
+  border-collapse: collapse;
+  margin: 1rem auto;
+  padding: 0;
+  max-width: 640px;
+}
+tr {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  padding: .2rem;
+}
+th,
+td {
+  padding: .5rem;
+  border-right: 1px solid #bbb;
+}
+@media(min-width:640px) {/*640px以上で*/
+  th,
+  td {
+    padding: 1rem;
+  }
+}
+
+/***************
+details
+***************/
+
+details {
+  padding: .5rem;
+  border: 1px dashed #7FC8A9;
+  border-radius: 3px;
+  margin: 1rem 0;
+  position: relative;
+}
+details[open] {
+  padding-bottom: 0;
+}
+details[open]>summary {
+  margin:0 0 .5rem;
+}
+details[open]>summary::after {
+  content: "\2796";
+}
+details details {
+  margin:0 0 .5rem;
+}
+details details[open] {
+  border-style:dotted;
+}
+summary {
+  transition: .3s ease;
+  transition-property: opacity, border, color, background;
+}
+summary {
+  cursor: pointer;
+  color: #007ea8;
+  display: block;
+}
+summary::-webkit-details-marker {
+  display: none;/* Chrome、Safari */
+}
+summary::after {
+  content: "\2795";
+  position: absolute;
+  right:.5em;
+  opacity:.3;
+}
+summary:hover::after {
+  opacity:.8;
+}
+
+/***************
+idとclassに定義
+***************/
+
+#header,#main,#nav,#footer{
+  max-width:640px;
+  margin:0 auto;
+  display:none;
+}
+.jsEnabled{
+  #header,#main,#nav,#footer{
+    display:block;
+  }
+}
+#siteName{
+  margin: 0;
+  font-weight: normal;
+  font-size: 25px;
+}
+#siteName a{
+  background-image:url("https://megacity.tk/img/meta/favicon.png");
+  background-repeat:no-repeat;
+  background-position:left top;
+  height:48px;
+  padding-left:60px;
+  display:block;
+}
+.created::before{margin-right:0.3rem;}
+.updated::before{margin-right:0.3rem;}
+.updated+.created{color:#555;font-size:70%;}
+html[lang="ja"] .created::before{content:"作成:";}
+html[lang="ja"] .updated::before{content:"更新:";}
+html[lang="en"] .created::before{content:"Created:";}
+html[lang="en"] .updated::before{content:"Updated:";}
+.author{
+  background:#f0fff0;
+}
+#footer{
+  text-align:center;
+}
+address{
+  font-style:normal;
+}
+
+/***************
+#nav関連
+***************/
+
+#nav{
+  margin-top:2rem;
+  border-top:3px dashed #aaa;
+  li{
+    margin-bottom:1rem;
+  }
+}
+.current{
+  font-weight:bold;
+  position:relative;
+}
+.current::after{
+  content:'Current';
+  background:#a22;
+  color:#fff;
+  font-size:.7rem;
+  padding:0 .4rem;
+  border-radius:.7rem;
+  margin-left:.4rem;
+  display:inline-block;
+}
+html[lang="ja"] .current::after{
+  content:'\4ECA\3053\3053';
+}
+/*
+.current::before{
+  content:'Current';
+  background:#a22;
+  color:#fff;
+  font-size:.7rem;
+  padding:0 .4rem;
+  border-radius:.7rem;
+  margin-right:.4rem;
+  display:inline-block;
+}
+html[lang="ja"] .current::before{
+  content:'\4ECA\3053\3053';
+}
+*/

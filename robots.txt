@@ -1,0 +1,7 @@
+User-agent: Megalodon
+Disallow: /
+
+User-Agent: ia_archiver
+Disallow: /
+
+Sitemap: https://megacity.tk/sitemap.txt
