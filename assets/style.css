@@ -175,7 +175,7 @@ idとclassに定義
   font-size: 25px;
 }
 #siteName a{
-  background-image:url("https://megacity.tk/img/common/favicon.png");
+  background-image:url("/img/common/favicon.png");
   background-repeat:no-repeat;
   background-position:left top;
   height:48px;
