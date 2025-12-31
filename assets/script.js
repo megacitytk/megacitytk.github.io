@@ -27,7 +27,7 @@ navContent.titles=[
 navContent.links=`
 <p>Links:</p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=5qtvZp3TBxc&list=PLRWvA5v5MAMm9yZ1uVbSdjn-kD8qQBbRP" target="_blank" rel="noopener">megacitytk - YouTube</a></li>
+<li><a href="https://www.youtube.com/watch?v=m5QcKfOj-hM&list=PLRWvA5v5MAMm9yZ1uVbSdjn-kD8qQBbRP" target="_blank" rel="noopener">megacitytk - YouTube</a></li>
 <li><a href="https://x.com/megacitytk" target="_blank" rel="noopener">megacitytk - X</a></li>
 </ul>
 `;
