@@ -6,6 +6,24 @@ body{
   color:#222;
   font-size:1rem;
   line-height:2;
+  margin:0 .5rem
+}
+body:not(.jsEnabled)::before{
+  content:"Loading now.";
+  color:transparent;
+  animation:try 1s ease-in 3s forwards,catch 1s ease-in 10s forwards;
+}
+@keyframes try{
+  to{
+    color:inherit;
+  }
+}
+@keyframes catch{
+  to{
+    content:"Maybe JavaScript isn't working or your internet connection is too slow.";
+    color:red;
+    font-weight:bold;
+  }
 }
 h1{
   font-size:1.5rem;
